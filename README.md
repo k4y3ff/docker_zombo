@@ -21,6 +21,15 @@ Building/Running
 
 If you have existing containers resulting in `docker-compose up` failing, try `docker-compose rm -f` to remove all containers.
 
+Connecting via psql
+-------------------
+
+If you're using Docker via Docker Machine on a Mac, the Docker Quickstart Terminal will fire up a VM for you. Docker's containers will expose their ports to that VM, and you will need to use the VM's IP address to connect. With `docker-compose up` running the services, `docker-machine ls` will list your VM IP via the `URL` field. It will look something like `tcp://192.168.00.000:2376`. You can then connect to Postgres with the following:
+
+```
+$ psql -h 192.168.00.000 -U postgres -d postgres
+```
+
 Creating Zombo Indices
 ----------------------
 Zombo requires you to specify the endpoint where ES can be reached when creating an index. When Docker starts up the service, it will map the service/container name to the exposed ports via `/etc/hosts`. You can get this name as follows:
