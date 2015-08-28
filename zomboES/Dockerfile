@@ -8,7 +8,7 @@
 # Pull base image.
 FROM java:7
 
-ENV ES_PKG_NAME elasticsearch-1.7.1
+ENV ES_PKG_NAME elasticsearch-1.5.2
 ENV ZOMBO_VER 2.1.37
 
 # Install Elasticsearch.
