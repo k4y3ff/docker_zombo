@@ -16,9 +16,11 @@ Build/Run/Exec Example
 -----------------------
 
 `docker build -t zombo_postgres .`
+
 `docker build -t zombo_elastic .`
 
 `docker run zombo_postgres`
+
 `docker run zombo_elastic`
 
 To get a shell in the above for tinkering:
