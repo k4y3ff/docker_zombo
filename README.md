@@ -24,5 +24,7 @@ Build/Run/Exec Example
 `docker run zombo_elastic`
 
 To get a shell in the above for tinkering:
+
 `docker ps` to get your container_id
+
 `docker exec -i -t container_id bash`
