@@ -13,11 +13,11 @@ RUN \
   cd / && \
   mkdir zombodb && \
   cd zombodb && \
-  wget https://github.com/zombodb/zombodb/releases/download/v2.1.37/zombodb_trusty_pg93-2.1.37_amd64.deb
+  wget https://github.com/zombodb/zombodb/releases/download/v2.1.38/zombodb_trusty_pg93-2.1.38_amd64.deb
 
 RUN \
   cd /zombodb && \
-  dpkg -i zombodb_trusty_pg93-2.1.37_amd64.deb
+  dpkg -i zombodb_trusty_pg93-2.1.38_amd64.deb
 
 COPY zombo-entrypoint.sh /
 
